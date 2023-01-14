@@ -1,13 +1,163 @@
+.navbar {
+  position: fixed !important;
+  width: 100vw;
+}
+
+.container-fluid .dekstop-query {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+.container-fluid .altezza {
+  height: 100vh;
+}
+.container-fluid .altezza .immagineProfilo {
+  width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .container-fluid .tablet-query {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 40px;
+  }
+  .container-fluid .tablet-query .allineamento {
+    text-align: center;
+  }
+  .container-fluid .altezza .immagineProfilo {
+    width: 100%;
+  }
+}
+.desktop-footer-query {
+  display: flex;
+  gap: 80px;
+  padding: 20px;
+}
+.desktop-footer-query .icon-size {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .tablet-footer-query {
+    gap: 40px;
+  }
+  .tablet-footer-query .icon-size {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 538px) {
+  .colonna {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .colonna .tablet-footer-query {
+    justify-content: space-between;
+    gap: 40px;
+    padding: 10px;
+  }
+  .colonna .tablet-footer-query .icon-size {
+    font-size: 40px;
+  }
+}
+.desktop-about-query {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+}
+.desktop-about-query .half-about {
+  width: 100%;
+}
+.desktop-about-query .spontaneous-img {
+  width: 100vw;
+  height: 300px;
+}
+
+.desktop-about-query .griglia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 8rem;
+  row-gap: 2rem;
+  padding: 1rem 80px;
+}
+.desktop-about-query .griglia .skill-box {
+  padding: 1rem;
+  cursor: pointer;
+}
+.desktop-about-query .griglia .skill-box .skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.desktop-about-query .griglia .skill-box .skill-title .skill-img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #D6BBAB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.desktop-about-query .griglia .skill-box .skill-title .skill-img .skill-icon {
+  width: 50px;
+}
+.desktop-about-query .griglia .skill-box .skill-title h3 {
+  margin-top: 0.5rem;
+}
+.desktop-about-query .griglia .skill-box .skill-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 35px;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #D6BBAB;
+  transition: 0.5s;
+}
+.desktop-about-query .griglia .skill-box .skill-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 35px;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: #D6BBAB;
+  transition: 0.5s;
+}
+.desktop-about-query .griglia .skill-box:hover > .skill-title:after,
+.desktop-about-query .griglia .skill-box:hover > .skill-title:before {
+  width: 35px;
+}
+.desktop-about-query .griglia .skill-box:hover .skill-img {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 991px) {
+  .desktop-about-query .griglia {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 538px) {
+  .desktop-about-query .griglia {
+    grid-template-columns: 1fr;
+  }
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "serenity", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/*# sourceMappingURL=index.css.map */

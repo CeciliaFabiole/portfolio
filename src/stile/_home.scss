@@ -1,0 +1,36 @@
+.container-fluid {
+    .dekstop-query{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:150px;
+    }
+    .altezza {
+        height: 100vh;
+
+        .immagineProfilo {
+            width: 50%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:991px) {
+    .container-fluid {
+        .tablet-query {
+            flex-direction: column-reverse ;
+            justify-content: center;
+            gap:40px;
+            .allineamento {
+                text-align: center;
+            }
+        }
+        .altezza {
+            .immagineProfilo {
+                width: 100%;
+            }
+        }
+    }
+
+}

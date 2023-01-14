@@ -1,0 +1,26 @@
+@import './stile/navbar';
+@import './stile/colors';
+@import './stile/fonts';
+@import './stile/home';
+@import './stile/footer';
+@import './stile/aboutMe';
+@import './stile/skills';
+
+body {
+  font-family: $fontFamily;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// h1{
+//   font-weight: $titoloWeight !important;
+//   font-size: $titoloSize !important;
+// }
+// h3{
+//   font-weight: $sottotitoloWeight !important;
+//   font-size: $sottotitoloSize !important;
+// }
+// p{
+//   font-weight: $paragrafoWeight !important;
+//   font-size: $paragrafoSize !important;
+// }

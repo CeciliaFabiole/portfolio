@@ -1,0 +1,32 @@
+.desktop-footer-query{
+    display: flex;
+    gap:80px;
+    padding:20px;
+    .icon-size{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .tablet-footer-query{
+        gap:40px;
+        .icon-size{
+            font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width:538px){
+    .colonna{
+        flex-direction: column;
+        gap:10px;
+        .tablet-footer-query{
+            justify-content: space-between;
+            gap:40px;
+            padding:10px;
+            .icon-size{
+                font-size: 40px;
+            }
+        }
+    }
+    
+}
