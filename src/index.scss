@@ -5,11 +5,21 @@
 @import './stile/footer';
 @import './stile/aboutMe';
 @import './stile/skills';
+@import './stile/contact';
+@import './stile/experiences';
 
 body {
   font-family: $fontFamily;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+a {
+	text-decoration: none !important;
+  color:inherit !important;
+}
+a:hover {
+  color:$darkg !important;
+  
 }
 
 // h1{
@@ -20,7 +30,7 @@ body {
 //   font-weight: $sottotitoloWeight !important;
 //   font-size: $sottotitoloSize !important;
 // }
-// p{
+// p, label{
 //   font-weight: $paragrafoWeight !important;
 //   font-size: $paragrafoSize !important;
 // }

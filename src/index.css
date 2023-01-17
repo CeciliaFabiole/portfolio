@@ -1,41 +1,73 @@
 .navbar {
   position: fixed !important;
-  width: 100vw;
+  width: 100%;
+  z-index: 1;
+}
+.navbar .nav-link {
+  font-weight: 300 !important;
+  font-size: 13pt !important;
 }
 
-.container-fluid .dekstop-query {
+.main-exlogo {
+  height: 60px;
+}
+
+.main-exlogo:hover {
+  height: 65px;
+}
+
+.container-fluid .desktop-query {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 150px;
+  gap: 100px;
 }
-.container-fluid .altezza {
-  height: 100vh;
+.container-fluid .desktop-query .larghezza {
+  width: 50%;
 }
-.container-fluid .altezza .immagineProfilo {
+.container-fluid .desktop-query .larghezza h1 {
+  font-weight: 700 !important;
+  font-size: 30pt !important;
+}
+.container-fluid .desktop-query .larghezza h3 {
+  font-weight: 500 !important;
+  font-size: 24pt !important;
+}
+.container-fluid .desktop-query .larghezza p {
+  font-weight: 300 !important;
+  font-size: 13pt !important;
+}
+.container-fluid .desktop-query .immagineProfilo {
   width: 50%;
 }
 
 @media screen and (max-width: 991px) {
-  .container-fluid .tablet-query {
+  .altezza .tablet-query {
     flex-direction: column-reverse;
     justify-content: center;
     gap: 40px;
   }
-  .container-fluid .tablet-query .allineamento {
+  .altezza .tablet-query .allineamento {
     text-align: center;
   }
-  .container-fluid .altezza .immagineProfilo {
+  .altezza .tablet-query .larghezza {
+    width: 100%;
+  }
+  .altezza .tablet-query .immagineProfilo {
     width: 100%;
   }
 }
 .desktop-footer-query {
   display: flex;
   gap: 80px;
-  padding: 20px;
+  padding: 20px 0;
 }
 .desktop-footer-query .icon-size {
   font-size: 40px;
+}
+
+.main-logo {
+  width: 50px;
 }
 
 @media screen and (max-width: 991px) {
@@ -43,18 +75,20 @@
     gap: 40px;
   }
   .tablet-footer-query .icon-size {
-    font-size: 40px;
+    font-size: 50px;
+  }
+  .main-logo {
+    width: 60px;
   }
 }
-@media screen and (max-width: 538px) {
+@media screen and (max-width: 600px) {
   .colonna {
     flex-direction: column;
     gap: 10px;
   }
   .colonna .tablet-footer-query {
     justify-content: space-between;
-    gap: 40px;
-    padding: 10px;
+    padding: 10px 0;
   }
   .colonna .tablet-footer-query .icon-size {
     font-size: 40px;
@@ -70,11 +104,28 @@
 .desktop-about-query .half-about {
   width: 100%;
 }
-.desktop-about-query .spontaneous-img {
+.desktop-about-query .contenitore-img {
   width: 100vw;
-  height: 300px;
+  height: 400px;
+  background-color: #54538A;
+}
+.desktop-about-query .contenitore-img .spontaneous-img {
+  width: 50%;
 }
 
+@media screen and (max-width: 991px) {
+  .desktop-about-query .contenitore-img .spontaneous-img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 538px) {
+  .desktop-about-query .contenitore-img .spontaneous-img {
+    width: 100%;
+  }
+}
+.desktop-about-query #skill-color {
+  background-color: #D6BBAB;
+}
 .desktop-about-query .griglia {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -83,7 +134,7 @@
   text-align: center;
   column-gap: 8rem;
   row-gap: 2rem;
-  padding: 1rem 80px;
+  padding: 1rem 0;
 }
 .desktop-about-query .griglia .skill-box {
   padding: 1rem;
@@ -154,10 +205,131 @@
     grid-template-columns: 1fr;
   }
 }
+.desktop-contact-query {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.desktop-contact-query .link-size {
+  font-weight: 300 !important;
+  font-size: 13pt !important;
+}
+.desktop-contact-query .link-size .bordo {
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+.desktop-contact-query .link-size .bordo .icon-contact-size {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.desktop-contact-query .link-size .bordo:hover {
+  font-size: 14pt;
+  color: #638A5A;
+}
+.desktop-contact-query .form-style {
+  width: 90%;
+  max-width: 600px;
+}
+.desktop-contact-query .form-style .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.desktop-contact-query .form-style .row .input-group {
+  flex-basis: 48%;
+}
+.desktop-contact-query .form-style .input-group {
+  margin-bottom: 40px;
+  position: relative;
+}
+.desktop-contact-query .form-style .input-group input, .desktop-contact-query .form-style .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #000000;
+  color: #000000;
+  background: transparent;
+  font-size: 15px;
+}
+.desktop-contact-query .form-style .input-group label {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  color: #000000;
+  cursor: text;
+  transition: 0.2s;
+}
+.desktop-contact-query .form-style .input-group input:focus ~ label,
+.desktop-contact-query .form-style .input-group input:valid ~ label,
+.desktop-contact-query .form-style .input-group textarea:focus ~ label,
+.desktop-contact-query .form-style .input-group textarea:valid ~ label {
+  top: -40px;
+  font-size: 14px;
+}
+.desktop-contact-query .form-style button {
+  padding: 10px 0;
+  color: #000000;
+  outline: none;
+  border: 1px solid #000000;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 538px) {
+  .desktop-contact-query .link-size {
+    font-size: 12pt !important;
+  }
+  .desktop-contact-query .form-style .row {
+    flex-direction: column;
+  }
+}
+#ex-color {
+  background-color: #9896D6;
+}
+
+.desktop-experience-query {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.desktop-experience-query .desktop-study-query,
+.desktop-experience-query .desktop-work-query {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  gap: 100px;
+}
+.desktop-experience-query .desktop-study-query .contenitore-card,
+.desktop-experience-query .desktop-work-query .contenitore-card {
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+}
+.desktop-experience-query .desktop-study-query {
+  margin-top: 180px;
+}
+
 body {
   font-family: "serenity", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+a:hover {
+  color: #638A5A !important;
 }
 
 /*# sourceMappingURL=index.css.map */

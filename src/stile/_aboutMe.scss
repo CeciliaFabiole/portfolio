@@ -4,11 +4,37 @@
     flex-direction: column;
     gap: 50px;
     justify-content: space-between;
-    .half-about{
-        width:100%;
+
+    .half-about {
+        width: 100%;
     }
-    .spontaneous-img {
-        width: 100vw;
-        height: 300px;
+
+    .contenitore-img {
+            width: 100vw;
+            height: 400px;
+            background-color: $purple;
+        .spontaneous-img {
+            width: 50%
+        }
     }
 }
+@media screen and (max-width:991px) {
+    .desktop-about-query {
+        .contenitore-img {
+            .spontaneous-img {
+                width: 70%
+            }
+        }
+    }
+}
+
+@media screen and (max-width:538px) {
+    .desktop-about-query {
+        .contenitore-img {
+            .spontaneous-img {
+                width: 100%
+            }
+        }
+    }
+}
+

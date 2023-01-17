@@ -1,4 +1,7 @@
 .desktop-about-query {
+    #skill-color{
+        background-color: $beige;
+    }
     .griglia {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -7,7 +10,7 @@
         text-align: center;
         column-gap: 8rem;
         row-gap: 2rem;
-        padding: 1rem 80px;
+        padding: 1rem 0;
 
         .skill-box {
             padding: 1rem;

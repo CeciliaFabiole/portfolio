@@ -1,0 +1,91 @@
+//pagina contatto
+.desktop-contact-query{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .link-size{
+        font-weight: $paragrafoWeight !important;
+        font-size: $paragrafoSize !important;
+        .bordo{
+            margin-bottom: 50px;
+            text-align: center;
+            border: 1px solid $black;
+            padding:10px;
+            .icon-contact-size{
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+        }
+        .bordo:hover{
+            font-size: 14pt;
+            color: $darkg;
+        }
+    }
+    //parte del form
+    .form-style{
+        width:90%;
+        max-width: 600px;
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .input-group{
+                flex-basis: 48%;
+            }
+        }
+        .input-group{
+            margin-bottom: 40px;
+            position: relative;
+            input,textarea{
+                width:100%;
+                padding:10px;
+                outline:0;
+                border: 1px solid $black;
+                color: $black;
+                background: transparent;
+                font-size: 15px;
+            }
+            label{
+                height: 100%;
+                position: absolute;
+                top: 0;
+                padding: 10px;
+                color: $black;
+                cursor: text;
+                transition: 0.2s;
+            }
+            input:focus~label,
+            input:valid~label,
+            textarea:focus~label,
+            textarea:valid~label{
+                top: -40px;
+                font-size: 14px;
+            }
+        }
+        button{
+            padding:10px 0;
+            color: $black;
+            outline: none;
+            border: 1px solid $black;
+            background: transparent;
+            width: 100%;
+            cursor:pointer;
+        }
+    }
+}
+
+@media screen and (max-width:538px) {
+    //pagina contatto
+    .desktop-contact-query{
+        .link-size{
+            font-size: $didascaliaSize !important;
+        }
+        //parte del form
+        .form-style{
+            .row{
+                flex-direction: column;
+            }
+        }
+    }
+}

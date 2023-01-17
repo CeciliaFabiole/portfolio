@@ -1,28 +1,33 @@
 .desktop-footer-query{
     display: flex;
     gap:80px;
-    padding:20px;
+    padding:20px 0;
     .icon-size{
         font-size: 40px;
     }
+}
+.main-logo{
+    width: 50px;
 }
 
 @media screen and (max-width:991px){
     .tablet-footer-query{
         gap:40px;
         .icon-size{
-            font-size: 40px;
+            font-size: 50px;
         }
     }
+    .main-logo{
+        width: 60px;
+    }
 }
-@media screen and (max-width:538px){
+@media screen and (max-width:600px){
     .colonna{
         flex-direction: column;
         gap:10px;
         .tablet-footer-query{
             justify-content: space-between;
-            gap:40px;
-            padding:10px;
+            padding:10px 0;
             .icon-size{
                 font-size: 40px;
             }

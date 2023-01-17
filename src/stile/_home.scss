@@ -1,12 +1,28 @@
 .container-fluid {
-    .dekstop-query{
-        display:flex;
+    .desktop-query {
+        display: flex;
         align-items: center;
         justify-content: space-between;
-        gap:150px;
-    }
-    .altezza {
-        height: 100vh;
+        gap: 100px;
+
+        .larghezza {
+            width: 50%;
+
+            h1 {
+                font-weight: $titoloWeight !important;
+                font-size: $titoloSize !important;
+            }
+
+            h3 {
+                font-weight: $sottotitoloWeight !important;
+                font-size: $sottotitoloSize !important;
+            }
+
+            p {
+                font-weight: $paragrafoWeight !important;
+                font-size: $paragrafoSize !important;
+            }
+        }
 
         .immagineProfilo {
             width: 50%;
@@ -17,16 +33,20 @@
 
 
 @media screen and (max-width:991px) {
-    .container-fluid {
+    .altezza {
         .tablet-query {
-            flex-direction: column-reverse ;
+            flex-direction: column-reverse;
             justify-content: center;
-            gap:40px;
+            gap: 40px;
+
             .allineamento {
                 text-align: center;
             }
-        }
-        .altezza {
+
+            .larghezza {
+                width: 100%;
+            }
+
             .immagineProfilo {
                 width: 100%;
             }

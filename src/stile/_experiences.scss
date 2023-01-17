@@ -1,0 +1,32 @@
+#ex-color{
+    background-color: $violet;
+}
+.desktop-experience-query {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    .desktop-study-query,
+    .desktop-work-query {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        gap: 100px;
+
+        .contenitore-card {
+            width: 100%;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    }
+    .desktop-study-query{
+        margin-top:180px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .desktop-experience-query {}
+}

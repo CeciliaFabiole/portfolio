@@ -1,28 +1,26 @@
 import SkillsCard from "./SkillsCard";
-import logoSass from '../assets/logo_sass.png'
-import logoCSS from '../assets/logo_css.png'
-import logoHTML from '../assets/logo_html.png'
-import logoJavascript from '../assets/logo_javascript.png'
-import logoTypescript from '../assets/logo_typescript.png'
-import logoReact from '../assets/logo_react.png'
-import logoNodejs from '../assets/logo_nodejs.png'
+import skillsLight from '../assets/skillsLight.png'
 
 function Skills() {
     return (
-        <div className="container-fluid bg-success pt-5">
-            <div className="container bg-light pt-5">
+        <div className="container-fluid">
+            <div className="container d-flex flex-column">
                 <div className="desktop-about-query">
-                    <img src="#" alt="" className="bg-dark spontaneous-img"/>
+                    <div className='contenitore-img d-flex align-items-end' id='skill-color'>
+                        <div className='container'>
+                            <img src={skillsLight} alt="" className="spontaneous-img" />
+                        </div>
+                    </div>
                     <div className="griglia">
-                        <SkillsCard logo={logoHTML} title="HTML5" paragraph="Lorem ipsum"/>
-                        <SkillsCard logo={logoCSS} title="CSS" paragraph="Lorem ipsum"/>
-                        <SkillsCard logo={logoSass} title="SCSS" paragraph="Lorem ipsum"/>
-                        <SkillsCard logo={logoJavascript} title="Javascript" paragraph="Lorem ipsum"/>
-                        <SkillsCard logo={logoTypescript} title="Typescript" paragraph="Lorem ipsum"/>
-                        <SkillsCard logo={logoReact} title="React" paragraph="Lorem ipsum"/>
-                        <SkillsCard logo={logoNodejs} title="Node.js" paragraph="Lorem ipsum"/>
-                        <SkillsCard logo="#" title="Express.js" paragraph="Lorem ipsum"/>
-                        <SkillsCard logo="#" title="PostgresQL" paragraph="Lorem ipsum"/>
+                        <SkillsCard logo='https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/html5/html5-original.svg' title="HTML5" paragraph="Lorem ipsum" />
+                        <SkillsCard logo='https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-original.svg' title="CSS" paragraph="Lorem ipsum" />
+                        <SkillsCard logo='https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sass/sass-original.svg' title="SCSS" paragraph="Lorem ipsum" />
+                        <SkillsCard logo='https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg' title="Javascript" paragraph="Lorem ipsum" />
+                        <SkillsCard logo='https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg' title="Typescript" paragraph="Lorem ipsum" />
+                        <SkillsCard logo='https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg' title="React" paragraph="Lorem ipsum" />
+                        <SkillsCard logo='https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg' title="Node.js" paragraph="Lorem ipsum" />
+                        <SkillsCard logo="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/express/express-original.svg" title="Express.js" paragraph="Lorem ipsum" />
+                        <SkillsCard logo="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original.svg" title="PostgresQL" paragraph="Lorem ipsum" />
                     </div>
                 </div>
             </div>
