@@ -29,7 +29,7 @@ function ContactForm() {
     };
     return (
         <form className="form-style mb-5 mt-5" ref={form} onSubmit={sendEmail}>
-            <h4 className='mb-5 text-center'>Mandami una e-mail!</h4>
+            <h4 className='mb-5 text-center'>Send me an e-mail!</h4>
             <div className="row">
                 <div className="input-group">
                     <input type="text" name="user_name" id="name" required />

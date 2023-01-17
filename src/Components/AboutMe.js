@@ -30,11 +30,16 @@ function AboutMe() {
                         <p>Overall, I’m a rare combination of technical expertise and artistic talent. My ability to create visually stunning websites
                             that are both easy to navigate and tailored to specific audiences makes me an asset to any team. The determination and
                             willingness to overcome obstacles make me an ideal candidate for any web development role.</p>
-                        
+
                     </div>
-                    <a download="" href={CVCeciliaFabiole}>
-                            <h5>Download my CV <FiFileText size="25px" /></h5>
+                    <div className='bordo'>
+                        <a download="" href={CVCeciliaFabiole} className="allineamento">
+                            <FiFileText size="25px" />
+                            <h5 className='mt-3'>Download my CV </h5>
+                            
                         </a>
+                    </div>
+
                 </div>
             </div>
         </div>

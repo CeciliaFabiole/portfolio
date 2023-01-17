@@ -17,6 +17,16 @@
             width: 50%
         }
     }
+    .bordo{
+            text-align: center;
+            border: 1px solid transparent;
+            padding:20px 60px;
+            box-shadow: 5px 5px 10px 0px gray;
+    }
+    .bordo:hover{
+        color: $darkg;
+        cursor: pointer;
+    }
 }
 @media screen and (max-width:991px) {
     .desktop-about-query {

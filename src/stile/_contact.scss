@@ -7,18 +7,23 @@
     .link-size{
         font-weight: $paragrafoWeight !important;
         font-size: $paragrafoSize !important;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+        padding: 1rem 0;
         .bordo{
-            margin-bottom: 50px;
             text-align: center;
-            border: 1px solid $black;
-            padding:10px;
+            border: 1px solid transparent;
+            padding:20px;
+            box-shadow: 5px 5px 10px 0px gray;
             .icon-contact-size{
                 font-size: 25px;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
             }
         }
         .bordo:hover{
-            font-size: 14pt;
+            padding-top:30px;
             color: $darkg;
         }
     }
@@ -29,19 +34,21 @@
         .row{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             .input-group{
-                flex-basis: 48%;
+                flex-basis: 46%;
             }
         }
         .input-group{
             margin-bottom: 40px;
             position: relative;
+            box-shadow: 5px 5px 10px 0px gray;
+            padding:0;
             input,textarea{
                 width:100%;
                 padding:10px;
                 outline:0;
-                border: 1px solid $black;
+                border: 1px solid transparent;
                 color: $black;
                 background: transparent;
                 font-size: 15px;
@@ -67,10 +74,11 @@
             padding:10px 0;
             color: $black;
             outline: none;
-            border: 1px solid $black;
+            border: 1px solid transparent;
             background: transparent;
             width: 100%;
             cursor:pointer;
+            box-shadow: 5px 5px 10px 0px gray;
         }
     }
 }
