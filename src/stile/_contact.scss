@@ -45,10 +45,18 @@
     .form-style{
         width:90%;
         max-width: 600px;
+        .input-label-container{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         .row{
+            width:100%;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             .input-group{
                 flex-basis: 46%;
             }
@@ -108,6 +116,9 @@
         .form-style{
             .row{
                 flex-direction: column;
+                .input-group{
+                    width: 100%;
+                }
             }
         }
     }

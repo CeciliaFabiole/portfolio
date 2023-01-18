@@ -139,7 +139,6 @@
 }
 .desktop-about-query .contenitore-img .spontaneous-img {
   font-family: "Parppim";
-  width: 50%;
   font-size: 100pt;
   color: #ffffff;
 }
@@ -157,12 +156,21 @@
 
 @media screen and (max-width: 991px) {
   .desktop-about-query .contenitore-img .spontaneous-img {
-    width: 70%;
+    font-size: 70pt;
   }
 }
 @media screen and (max-width: 538px) {
+  .desktop-about-query .contenitore-img {
+    height: 350px;
+  }
   .desktop-about-query .contenitore-img .spontaneous-img {
-    width: 100%;
+    font-size: 45pt;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 342px) {
+  .desktop-about-query .contenitore-img .spontaneous-img {
+    font-size: 35pt;
   }
 }
 .desktop-about-query #skill-color {
@@ -295,10 +303,18 @@
   width: 90%;
   max-width: 600px;
 }
+.desktop-contact-query .form-style .input-label-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .desktop-contact-query .form-style .row {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .desktop-contact-query .form-style .row .input-group {
   flex-basis: 46%;
@@ -352,6 +368,9 @@
   }
   .desktop-contact-query .form-style .row {
     flex-direction: column;
+  }
+  .desktop-contact-query .form-style .row .input-group {
+    width: 100%;
   }
 }
 #ex-color {

@@ -34,26 +34,28 @@ function ContactForm() {
                 <h4>{t("contact_send_me")}</h4>
                 <hr className='hr-title-form'></hr>
             </div>
-            <div className="row">
-                <div className="input-group">
-                    <input type="text" name="user_name" id="name" required />
-                    <label htmlFor="name"><FaUser style={{ fontSize: 25 }} /> {t("form_name")} </label>
+            <div className='input-label-container'>
+                <div className="row">
+                    <div className="input-group">
+                        <input type="text" name="user_name" id="name" required />
+                        <label htmlFor="name"><FaUser style={{ fontSize: 25 }} /> {t("form_name")} </label>
+                    </div>
+                    <div className="input-group">
+                        <input type="text" name="user_number" id="number" required />
+                        <label htmlFor="number"> <ImPhone style={{ fontSize: 25 }} /> {t("form_phone")} </label>
+                    </div>
                 </div>
-                <div className="input-group">
-                    <input type="text" name="user_number" id="number" required />
-                    <label htmlFor="number"> <ImPhone style={{ fontSize: 25 }} /> {t("form_phone")} </label>
-                </div>
-            </div>
 
-            <div className="input-group">
-                <input type="email" name="user_email" id="email" required />
-                <label htmlFor="email"><MdEmail style={{ fontSize: 25 }} /> {t("form_email")} </label>
+                <div className="input-group">
+                    <input type="email" name="user_email" id="email" required />
+                    <label htmlFor="email"><MdEmail style={{ fontSize: 25 }} /> {t("form_email")} </label>
+                </div>
+                <div className="input-group">
+                    <textarea rows="8" name="message" id="message" required />
+                    <label htmlFor="message"><AiFillMessage style={{ fontSize: 25 }} /> {t("form_message")} </label>
+                </div>
+                <button type="submit">{t("form_button")} <SiMinutemailer style={{ fontSize: 25 }} /> </button>
             </div>
-            <div className="input-group">
-                <textarea rows="8" name="message" id="message" required />
-                <label htmlFor="message"><AiFillMessage style={{ fontSize: 25 }} /> {t("form_message")} </label>
-            </div>
-            <button type="submit">{t("form_button")} <SiMinutemailer style={{ fontSize: 25 }} /> </button>
         </form>
     );
 }

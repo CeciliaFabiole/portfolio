@@ -15,7 +15,6 @@
             background-color: $purple;
         .spontaneous-img {
             font-family: 'Parppim';
-            width: 50%;
             font-size:100pt;
             color:$white;
         }
@@ -36,7 +35,7 @@
     .desktop-about-query {
         .contenitore-img {
             .spontaneous-img {
-                width: 70%
+                font-size: 70pt;
             }
         }
     }
@@ -45,8 +44,19 @@
 @media screen and (max-width:538px) {
     .desktop-about-query {
         .contenitore-img {
+            height:350px;
             .spontaneous-img {
-                width: 100%
+                font-size:45pt;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width:342px) {
+    .desktop-about-query {
+        .contenitore-img {
+            .spontaneous-img {
+                font-size:35pt;
             }
         }
     }

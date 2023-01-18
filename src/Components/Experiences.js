@@ -20,9 +20,9 @@ function Experiences() {
                             <h2>{t("experience_projects")}</h2>
                             <hr className='hr-title'></hr>
                         </div>
-                        <CardProject year='2022' job={t("nvidia_project")} place={t("show_more")} link="https://github.com/Micheleg27/NVIDIA-GeForce-Now-REACT-" />
-                        <CardProject year='2022' job={t("pancake_project")} place={t("show_more")} link="https://github.com/rickcrypto90/PancakeSwap_Team5" />
-                        <CardProject year='2022' job={t("hw1_project")} place={t("show_more")} link="https://github.com/riorillo/hw-team-1" />
+                        <CardProject year={t("nvidia_project")} job='React, Bootstrap' place={t("show_more")} link="https://github.com/Micheleg27/NVIDIA-GeForce-Now-REACT-" />
+                        <CardProject year={t("pancake_project")} job='HTML, SCSS, Javascript' place={t("show_more")} link="https://github.com/rickcrypto90/PancakeSwap_Team5" />
+                        <CardProject year={t("hw1_project")} job='HTML, CSS, Javascript' place={t("show_more")} link="https://github.com/riorillo/hw-team-1" />
 
                     </div>
                     <div className='desktop-study-query'>
