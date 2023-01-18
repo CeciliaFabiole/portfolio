@@ -7,27 +7,48 @@
     justify-content: space-between;
     gap:10px;
     .desktop-study-query,
-    .desktop-work-query {
+    .desktop-work-query,
+    .desktop-projects-query {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         text-align: center;
-        gap: 100px;
 
         .contenitore-card {
-            width: 100%;
+            width: 280px;
             border: 1px solid transparent;
             padding: 20px;
             box-shadow: 5px 5px 10px 0px gray;
+            margin-bottom:100px;
+            color: $violet;
         }
+        .contenitore-titolo{
+            width:100%;
+            .hr-title{
+                width:100%;
+                border: 3px solid $violet;
+            }
+        }
+        
     }
     .desktop-study-query{
         margin-top:180px;
+    }
+    .desktop-projects-query{
+        margin-top:350px;
     }
 
 }
 
 @media screen and (max-width:991px) {
-    .desktop-experience-query {}
+    .desktop-experience-query {
+        flex-direction: column;
+        .desktop-work-query,
+        .desktop-study-query,
+        .desktop-projects-query {
+            margin-top:0;
+            
+        } 
+    }
 }

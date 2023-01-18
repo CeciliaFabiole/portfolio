@@ -12,7 +12,7 @@ function Skills() {
                 <div className="desktop-about-query">
                     <div className='contenitore-img d-flex align-items-end' id='skill-color'>
                         <div className='container'>
-                            <img src={skillsLight} alt="" className="spontaneous-img" />
+                        <h1 className="spontaneous-img">Skills</h1>
                         </div>
                     </div>
                     <div className="griglia">

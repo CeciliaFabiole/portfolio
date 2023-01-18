@@ -11,7 +11,7 @@ function AboutMe() {
                 <div className="desktop-about-query">
                     <div className='contenitore-img d-flex align-items-end'>
                         <div className='container'>
-                            <img src={aboutLight} alt="" className="spontaneous-img" />
+                            <h1 className="spontaneous-img">About me</h1>
                         </div>
                     </div>
 

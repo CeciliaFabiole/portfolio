@@ -41,24 +41,36 @@ function Navbar() {
                 <button onClick={showNavbar} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <Link className="nav-link" to="/about">{t('nav_about_me')}</Link>
                         <Link className="nav-link" to="/skills">{t('nav_skills')}</Link>
                         <Link className="nav-link" to="/experiences">{t('nav_experiences')}</Link>
                         <Link className="nav-link" to="/contact">{t('nav_contact_me')}</Link>
+                        <div className="selezione-lingua tablet-display">
+                            {languages.map(({ code, country_code, name, short }) => (
+                                <button
+                                    key={country_code}
+                                    onClick={() => i18next.changeLanguage(code)}
+                                    disabled={code === currentLanguageCode}>
+                                    {short}
+                                </button>
+                            ))}
+                        </div>
                     </div>
-
+                </div>
+                <div className="selezione-lingua justify-content-end desktop-display">
+                    {languages.map(({ code, country_code, name, short }) => (
+                        <button
+                            key={country_code}
+                            onClick={() => i18next.changeLanguage(code)}
+                            disabled={code === currentLanguageCode}>
+                            {short}
+                        </button>
+                    ))}
                 </div>
             </div>
-            <div className="selezione-lingua">
-                {languages.map(({ code, country_code, name, short }) => (
-                    <p key={country_code}>
-                        <button
-                            onClick={() => i18next.changeLanguage(code)}
-                            disabled={code === currentLanguageCode}>{short}</button></p>
-                ))}
-            </div>
+
         </nav>
     );
 }

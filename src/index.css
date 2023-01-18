@@ -2,31 +2,48 @@
   position: fixed !important;
   width: 100%;
   z-index: 1;
+  background-color: #ffffff;
+}
+.navbar .main-exlogo {
+  height: 60px;
+}
+.navbar .main-exlogo:hover {
+  height: 65px;
 }
 .navbar .nav-link {
   font-weight: 300 !important;
   font-size: 13pt !important;
 }
-
-.selezione-lingua {
-  display: flex;
+.navbar .tablet-display {
+  display: none !important;
 }
-.selezione-lingua button {
+.navbar .selezione-lingua {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar .selezione-lingua button {
   border: none;
   background-color: transparent;
 }
-.selezione-lingua button:hover:not(:disabled) {
+.navbar .selezione-lingua button:hover:not(:disabled) {
   color: #638A5A;
 }
 
-.main-exlogo {
-  height: 60px;
+@media screen and (max-width: 991px) {
+  .navbar .container {
+    position: relative;
+  }
+  .navbar .container .tablet-display {
+    display: block !important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar .container .desktop-display {
+    display: none;
+  }
 }
-
-.main-exlogo:hover {
-  height: 65px;
-}
-
 .container-fluid .desktop-query {
   display: flex;
   align-items: center;
@@ -121,13 +138,17 @@
   background-color: #54538A;
 }
 .desktop-about-query .contenitore-img .spontaneous-img {
+  font-family: "Parppim";
   width: 50%;
+  font-size: 100pt;
+  color: #ffffff;
 }
 .desktop-about-query .bordo {
   text-align: center;
   border: 1px solid transparent;
   padding: 20px 60px;
   box-shadow: 5px 5px 10px 0px gray;
+  color: #54538A;
 }
 .desktop-about-query .bordo:hover {
   color: #638A5A;
@@ -233,6 +254,20 @@
   justify-content: center;
   flex-direction: column;
 }
+.desktop-contact-query .contenitore-titolo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desktop-contact-query .contenitore-titolo .hr-title {
+  width: 50%;
+  border: 1px solid;
+}
+.desktop-contact-query .contenitore-titolo .hr-title-form {
+  width: 100%;
+  border: 1px solid;
+}
 .desktop-contact-query .link-size {
   font-weight: 300 !important;
   font-size: 13pt !important;
@@ -310,9 +345,10 @@
   box-shadow: 5px 5px 10px 0px gray;
 }
 
-@media screen and (max-width: 538px) {
+@media screen and (max-width: 768px) {
   .desktop-contact-query .link-size {
     font-size: 12pt !important;
+    grid-template-columns: 1fr;
   }
   .desktop-contact-query .form-style .row {
     flex-direction: column;
@@ -329,25 +365,52 @@
   gap: 10px;
 }
 .desktop-experience-query .desktop-study-query,
-.desktop-experience-query .desktop-work-query {
+.desktop-experience-query .desktop-work-query,
+.desktop-experience-query .desktop-projects-query {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
-  gap: 100px;
 }
 .desktop-experience-query .desktop-study-query .contenitore-card,
-.desktop-experience-query .desktop-work-query .contenitore-card {
-  width: 100%;
+.desktop-experience-query .desktop-work-query .contenitore-card,
+.desktop-experience-query .desktop-projects-query .contenitore-card {
+  width: 280px;
   border: 1px solid transparent;
   padding: 20px;
   box-shadow: 5px 5px 10px 0px gray;
+  margin-bottom: 100px;
+  color: #9896D6;
+}
+.desktop-experience-query .desktop-study-query .contenitore-titolo,
+.desktop-experience-query .desktop-work-query .contenitore-titolo,
+.desktop-experience-query .desktop-projects-query .contenitore-titolo {
+  width: 100%;
+}
+.desktop-experience-query .desktop-study-query .contenitore-titolo .hr-title,
+.desktop-experience-query .desktop-work-query .contenitore-titolo .hr-title,
+.desktop-experience-query .desktop-projects-query .contenitore-titolo .hr-title {
+  width: 100%;
+  border: 3px solid #9896D6;
 }
 .desktop-experience-query .desktop-study-query {
   margin-top: 180px;
 }
+.desktop-experience-query .desktop-projects-query {
+  margin-top: 350px;
+}
 
+@media screen and (max-width: 991px) {
+  .desktop-experience-query {
+    flex-direction: column;
+  }
+  .desktop-experience-query .desktop-work-query,
+.desktop-experience-query .desktop-study-query,
+.desktop-experience-query .desktop-projects-query {
+    margin-top: 0;
+  }
+}
 body {
   font-family: "serenity", sans-serif;
   -webkit-font-smoothing: antialiased;

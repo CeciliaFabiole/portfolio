@@ -8,11 +8,15 @@ import { TiArrowRightThick } from "react-icons/ti";
 import { useTranslation } from "react-i18next";
 
 function Contact() {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <div className="container-fluid pt-5">
             <div className="container pt-5 desktop-contact-query mt-5">
-            <h4>{t("contact_contacts")}</h4>
+                <div className='contenitore-titolo'>
+                    <h4>{t("contact_contacts")}</h4>
+                    <hr className='hr-title'></hr>
+                </div>
+
                 <div className='mb-5 mt-4 link-size'>
                     <div className='bordo'>
                         <a href="tel:+393465431525">
