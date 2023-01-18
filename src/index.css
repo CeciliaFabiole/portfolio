@@ -8,6 +8,17 @@
   font-size: 13pt !important;
 }
 
+.selezione-lingua {
+  display: flex;
+}
+.selezione-lingua button {
+  border: none;
+  background-color: transparent;
+}
+.selezione-lingua button:hover:not(:disabled) {
+  color: #638A5A;
+}
+
 .main-exlogo {
   height: 60px;
 }

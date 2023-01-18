@@ -1,7 +1,9 @@
 import exLight from '../assets/exLight.png'
 import CardExperience from './CardExperience';
+import { useTranslation } from "react-i18next";
 
 function Experiences() {
+    const {t} = useTranslation();
     return (
         <div className="container-fluid altezza">
             <div className="container altezza">
@@ -14,15 +16,17 @@ function Experiences() {
                 </div>
                 <div className='desktop-experience-query mt-5'>
                     <div className='desktop-study-query'>
-                        <CardExperience year='2022' job='Develhope' place='Programmazione' />
-                        <CardExperience year='2018-2021' job='Accademia di Belle Arti' place='Grafica e Fotografia' />
-                        <CardExperience year='2010-2015' job='Liceo linguistico' place='Different places in Aosta Valley' />
+                        
+                        <CardExperience year='2022' job='Develhope' place={t("experience_programing")} />
+                        <CardExperience year='2018-2021' job={t("experience_accademy")} place={t("experience_graphics")} />
+                        <CardExperience year='2010-2015' job={t("experience_linguistic")} place={t("experience_languages")} />
 
                     </div>
                     <div className='desktop-work-query'>
-                        <CardExperience year='2022' job='Lifeguard' place='Kos, Greece' />
-                        <CardExperience year='2021' job='Photographer' place='Evia, Greece' />
-                        <CardExperience year='2014-2020' job='Bartender' place='Different places in Aosta Valley' />
+                        
+                        <CardExperience year='2022' job={t("experience_lifeguard")} place={t("experience_kos")} />
+                        <CardExperience year='2021' job={t("experience_photographer")} place={t("experience_evia")} />
+                        <CardExperience year='2014-2020' job={t("experience_bartender")} place={t("experience_vda")} />
 
                     </div>
                 </div>

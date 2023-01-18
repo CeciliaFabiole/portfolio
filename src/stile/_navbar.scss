@@ -1,4 +1,6 @@
 @import '../stile/fonts';
+@import '../stile/colors';
+
 .navbar {
     position: fixed !important;
     width: 100%;
@@ -8,7 +10,19 @@
         font-weight: $paragrafoWeight !important;
         font-size: $paragrafoSize !important;
     }
+    
 }
+.selezione-lingua{
+    display: flex;
+    button{
+        border: none;
+        background-color: transparent;
+    }
+    button:hover:not(:disabled){
+        color: $darkg;
+    }
+}
+
 
 .main-exlogo {
     height: 60px;

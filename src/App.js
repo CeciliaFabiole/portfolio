@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import Skills from './Components/Skills';
 import Experiences from './Components/Experiences';
 
+
 function App() {
   return (
     <div className='altezza'>
