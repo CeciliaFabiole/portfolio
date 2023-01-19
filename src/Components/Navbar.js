@@ -41,7 +41,7 @@ function Navbar() {
                 <button onClick={showNavbar} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div className="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <Link className="nav-link" to="/about">{t('nav_about_me')}</Link>
                         <Link className="nav-link" to="/skills">{t('nav_skills')}</Link>
