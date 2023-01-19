@@ -1,15 +1,17 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export function ErrorPage() {
 	const navigate = useNavigate();
 	return (
 		<div>
-			<div className="d-flex justify-content-center align-items-center flex-column" style={{height:'100vh'}}>
-				<h1>ERROR 404</h1>
-				<button type="button" className="btn btn-light btn-lg" onClick={() => navigate('/')}>
-					Torna alla Home
-				</button>
+			<div className="fullScreen-section text-light">
+				<h3>Page not found</h3>
+				<Link to="/">
+					<div className="bordo mt-3">
+						<h3>Home</h3>
+					</div>
+				</Link>
 			</div>
 		</div>
 	);

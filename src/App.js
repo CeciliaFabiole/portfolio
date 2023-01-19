@@ -16,7 +16,7 @@ import PaginaIniziale from './Components/PaginaIniziale';
 function App() {
   return (
     <div className='altezza'>
-       <PaginaIniziale/>
+       {/* <PaginaIniziale/> */}
       <Navbar />
       <Routes>
         <Route path="*" element={<ErrorPage />} />

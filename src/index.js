@@ -27,8 +27,10 @@ i18n
   });
 
 const loadingMarkup = (
-  <div className='py-4 text-center'>
-    <h2>Loading...</h2>
+  <div class="py-4 text-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
   </div>
 )
 
