@@ -7,8 +7,10 @@ function Home() {
             <div className="container desktop-query tablet-query pt-5">
                 <div className="allineamento larghezza">
                     <h1>Cecilia Fabiole</h1>
-                    <h3><i>Junior Web Developer</i></h3>
-                    <p>{t("home_hi")}<br/>{t("home_welcome")}</p>
+                    <hr className="hr-title"></hr>
+                    <h3>Junior Web Developer</h3>
+                    
+                    <p className="mt-4">{t("home_hi")}<br/>{t("home_welcome")}</p>
                 </div>
                 <img src={immagineProfilo} alt="immagine profilo professionale" className="immagineProfilo" />
             </div>

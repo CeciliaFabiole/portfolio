@@ -1,0 +1,34 @@
+//pagina iniziale
+
+.fullScreen-section{
+    position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .img-fullScreen{
+        width:150px;
+    }
+    .title-fullScreen{
+        font-size: $titoloSize;
+    }
+    .subtitle-fullScreen{
+        font-size: $sottotitoloSize;
+    }
+}
+
+.fullScreen-section{
+	
+	.text-fullScreen{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

@@ -45,10 +45,11 @@
     .desktop-experience-query {
         flex-direction: column;
         .desktop-work-query,
-        .desktop-study-query,
-        .desktop-projects-query {
+        .desktop-study-query {
             margin-top:0;
-            
         } 
+        .desktop-projects-query{
+            margin-top: 100px;
+        }
     }
 }

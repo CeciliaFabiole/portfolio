@@ -9,14 +9,17 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Skills from './Components/Skills';
 import Experiences from './Components/Experiences';
+import { ErrorPage } from './Components/Error';
+import PaginaIniziale from './Components/PaginaIniziale';
 
 
 function App() {
   return (
     <div className='altezza'>
-      {/* <PaginaIniziale/> */}
+       <PaginaIniziale/>
       <Navbar />
       <Routes>
+        <Route path="*" element={<ErrorPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/skills" element={<Skills />} />

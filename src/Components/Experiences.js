@@ -1,4 +1,3 @@
-import exLight from '../assets/exLight.png'
 import { CardExperience, CardProject } from './CardExperience';
 import { useTranslation } from "react-i18next";
 
@@ -10,11 +9,11 @@ function Experiences() {
                 <div className="desktop-about-query">
                     <div className='contenitore-img d-flex align-items-end' id='ex-color'>
                         <div className='container'>
-                        <h1 className="spontaneous-img">Experiences</h1>
+                        <h1 className="spontaneous-img">{t("experience_copertina")}</h1>
                         </div>
                     </div>
                 </div>
-                <div className='desktop-experience-query mt-5'>
+                <div className='desktop-experience-query'>
                     <div className='desktop-projects-query'>
                         <div className='mb-5 contenitore-titolo'>
                             <h2>{t("experience_projects")}</h2>

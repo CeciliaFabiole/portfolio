@@ -1,4 +1,3 @@
-import aboutLight from '../assets/aboutLight.png'
 import CVCeciliaFabiole from '../assets/CV-CeciliaFabiole.pdf'
 import { FiFileText } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
@@ -11,7 +10,7 @@ function AboutMe() {
                 <div className="desktop-about-query">
                     <div className='contenitore-img d-flex align-items-end'>
                         <div className='container'>
-                            <h1 className="spontaneous-img">About me</h1>
+                            <h1 className="spontaneous-img">{t("about_copertina")}</h1>
                         </div>
                     </div>
 

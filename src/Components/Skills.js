@@ -1,5 +1,4 @@
 import SkillsCard from "./SkillsCard";
-import skillsLight from '../assets/skillsLight.png';
 import { useTranslation } from "react-i18next";
 import indesignLine from "../assets/indesign-line.svg"
 import lightroomLine from "../assets/lightroom-line.svg"
@@ -12,7 +11,7 @@ function Skills() {
                 <div className="desktop-about-query">
                     <div className='contenitore-img d-flex align-items-end' id='skill-color'>
                         <div className='container'>
-                        <h1 className="spontaneous-img">Skills</h1>
+                        <h1 className="spontaneous-img">{t("skill_copertina")}</h1>
                         </div>
                     </div>
                     <div className="griglia">
