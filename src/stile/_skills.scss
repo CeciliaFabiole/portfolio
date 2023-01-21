@@ -2,6 +2,18 @@
     #skill-color{
         background-color: $beige;
     }
+    .contenitore-titolo{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        .hr-title{
+            width:80%;
+            border: 1px solid ;
+        }
+    }
     .griglia {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
